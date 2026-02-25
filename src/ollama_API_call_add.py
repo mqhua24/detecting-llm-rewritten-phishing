@@ -1,0 +1,168 @@
+import time
+import pandas as pd
+import requests
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import os
+from requests.exceptions import RetryError
+from tqdm import tqdm
+import tiktoken  # ✅ 新增：计算 token 数
+from prompt import prompt_prefix, prompt_prefix_m, prompt_prefix_l
+
+# ----------------- 配置项 -----------------
+type = "_m"
+INPUT_CSV = "../fusion_dataset_output/phishing_fused.csv"
+OUTPUT_CSV = f"../qwen3_dataset_output/qwen3_fused_phishing_output{type}.csv"
+ERROR_CSV = f"../qwen3_dataset_output/qwen3_fused_phishing_errors{type}.csv"
+#PROXY = "http://127.0.0.1:1080"
+url = "http://localhost:11434/api/generate"
+MODEL = "qwen3:8b"
+MAX_WORKERS = 5
+SLEEP_BETWEEN_CALLS = 0.0
+TIMEOUT = 20.0
+MAX_RETRIES = 3
+TOKEN_LIMIT = 300000  # ✅ 超过这个 token 数就跳过
+# ------------------------------------------
+
+# 初始化 tokenizer（根据模型选择编码器）
+enc = tiktoken.get_encoding("cl100k_base")
+
+
+
+if type == "":
+    prompt_prefix_selected = prompt_prefix
+elif type == "_l":
+    prompt_prefix_selected = prompt_prefix_l
+elif type == "_m":
+    prompt_prefix_selected = prompt_prefix_m
+elif type == "_me":
+    prompt_prefix_selected = prompt_prefix_m
+
+# -------------------- 核心函数 --------------------
+
+def call_api_single(content: str):
+    payload = {
+        # "model": "deepseek-r1:8b",
+        "model": MODEL,
+        "prompt": f"{prompt_prefix_selected}{content}",
+        "stream": False
+    }
+    response = requests.post(url, json=payload)
+
+    try:
+        return response.json()['response']
+    except Exception:
+        try:
+            return response
+        except Exception:
+            raise
+
+
+def safe_call(idx: int, orig_text: str):
+    """安全调用，带 token 检查与异常捕获"""
+    try:
+
+        prompt = f"{prompt_prefix_selected}{orig_text}"
+        token_count = len(enc.encode(prompt))
+
+        if token_count > TOKEN_LIMIT:
+            msg = f"Too long – skipped ({token_count} tokens)"
+            print(f"[Skip] row {idx} 太长 ({token_count} tokens)，跳过。")
+            return orig_text, RuntimeError(msg)
+
+        rewritten = call_api_single(orig_text)
+        if rewritten is None:
+            return None, RuntimeError("API 返回空")
+        return rewritten.strip(), None
+    except RetryError as re:
+        last_exc = re.last_attempt.exception() if hasattr(re, "last_attempt") else re
+        return None, last_exc
+    except Exception as e:
+        return None, e
+
+
+# 在配置项区域添加新配置
+#RESUME_FROM_INDEX = 1000  # 从第1001条开始处理
+
+def batch_process_concurrent(input_csv: str, output_csv: str, error_csv: str,
+                             max_workers: int = 5, sleep_between: float = 0.0, test_n: int = None):
+    df = pd.read_csv(input_csv, dtype=str)
+    if "text" not in df.columns:
+        raise RuntimeError("输入 CSV 中找不到 'text' 列，请检查文件。")
+
+    # 如果输出文件已存在，读取已有数据并从指定位置开始处理
+    start_index = 0
+    existing_results = []
+    if os.path.exists(output_csv):
+        try:
+            existing_df = pd.read_csv(output_csv, dtype=str)
+            existing_results = existing_df.to_dict('records')
+            start_index = len(existing_results)
+            print(f"检测到已有输出文件，从第 {start_index + 1} 条数据开始处理")
+        except Exception as e:
+            print(f"读取已有输出文件失败: {e}")
+
+    # 如果指定了 RESUME_FROM_INDEX，则使用该值
+    #if 'RESUME_FROM_INDEX' in globals() and RESUME_FROM_INDEX > 0:
+    #    start_index = RESUME_FROM_INDEX
+
+    # 从指定位置开始处理数据
+    df_to_process = df.iloc[start_index:]
+    print(df_to_process)
+    if test_n is not None:
+        df_to_process = df_to_process.head(test_n)
+    results = []
+    print(df_to_process)
+    errors = []
+    # 创建一个索引到结果位置的映射
+    index_mapping = {}
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        future_to_idx = {}
+        for idx, row in df_to_process.iterrows():
+            orig_text = row.get("text", "") or ""
+            future = executor.submit(safe_call, idx, orig_text)
+            future_to_idx[future] = (idx, orig_text)
+            index_mapping[idx] = len(results)
+            results.append(None)  # 预留位置
+
+        for future in tqdm(as_completed(future_to_idx), total=len(future_to_idx), desc="Processing rows"):
+            idx, orig_text = future_to_idx[future]
+            try:
+                rewritten, err = future.result()
+            except Exception as e:
+                rewritten, err = None, e
+
+            # 按原始索引位置存储结果
+            result_entry = {"text": orig_text, "label": 1}
+            if not err:
+                result_entry = {"text": rewritten, "label": 1}
+            else:
+                errors.append({"index": idx, "text": orig_text, "error": repr(err)})
+
+            results[index_mapping[idx]] = result_entry
+
+            if sleep_between:
+                time.sleep(sleep_between)
+
+    # 过滤掉任何可能的 None 值（理论上不应该有）
+    results = [r for r in results if r is not None]
+    combined_results = existing_results + results
+
+    out_df = pd.DataFrame(combined_results, columns=["text", "label"])
+    out_df.to_csv(output_csv, index=False)
+    print(f"处理完成，输出写入 {output_csv}，共 {len(out_df)} 条。")
+
+    if errors:
+        err_df = pd.DataFrame(errors)
+        err_df.to_csv(error_csv, index=False)
+        print(f"{len(errors)} 条调用失败或被跳过，详情写入 {error_csv}")
+
+
+# -------------------- 主入口 --------------------
+
+if __name__ == "__main__":
+    TEST_N = 1000  # 调试时改成 1 或 5；正式跑可以设为 None
+    batch_process_concurrent(INPUT_CSV, OUTPUT_CSV, ERROR_CSV,
+                             max_workers=MAX_WORKERS,
+                             sleep_between=SLEEP_BETWEEN_CALLS,
+                             test_n=TEST_N)

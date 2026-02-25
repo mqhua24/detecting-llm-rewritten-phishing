@@ -1,0 +1,139 @@
+df1 = pd.read_csv("../merged_shuffled_fused_original_2000_detect_result_process.csv")
+df2 = pd.read_csv("../../../../qwen3_dataset_output/2000legitandphish/merged_shuffled_fused_original_2000_with_id.csv")
+
+对齐后的总数量： 1994
+一致数量 correct： 1762
+准确率 Accuracy: 0.8836509528585758
+召回率 Recall: 0.8595787362086259
+精确率 Precision: 0.9030558482613277
+F1 分数: 0.8807810894141829
+混淆矩阵: TP, FP, TN, FN = 857 92 905 140
+
+
+
+QWEN 数据集
+
+df1 = pd.read_csv("../merged_shuffled_qwen3_fused_clean_with_id_detect_result_process.csv")
+df2 = pd.read_csv("../../../../qwen3_dataset_output/2000legitandphish/merged_shuffled_qwen3_fused_clean_with_id.csv")
+对齐后的总数量： 1995
+一致数量 correct： 959
+准确率 Accuracy: 0.4807017543859649
+召回率 Recall: 0.047094188376753505
+精确率 Precision: 0.3560606060606061
+F1 分数: 0.0831858407079646
+混淆矩阵: TP, FP, TN, FN = 47 85 912 951
+
+df1 = pd.read_csv("../merged_shuffled_qwen3_fused_m_clean_with_id_detect_result_process.csv")
+df2 = pd.read_csv("../../../../qwen3_dataset_output/2000legitandphish/merged_shuffled_qwen3_fused_m_clean_with_id.csv")
+
+对齐后的总数量： 1995
+一致数量 correct： 1344
+准确率 Accuracy: 0.6736842105263158
+召回率 Recall: 0.43887775551102204
+精确率 Precision: 0.8279773156899811
+F1 分数: 0.5736738703339882
+混淆矩阵: TP, FP, TN, FN = 438 91 906 560
+
+
+df1 = pd.read_csv("../merged_shuffled_qwen3_fused_l_clean_with_id_detect_result_process.csv")
+df2 = pd.read_csv("../../../../qwen3_dataset_output/2000legitandphish/merged_shuffled_qwen3_fused_l_clean_with_id.csv")
+对齐后的总数量： 1994
+一致数量 correct： 1771
+准确率 Accuracy: 0.8881644934804414
+召回率 Recall: 0.8686058174523571
+精确率 Precision: 0.9039665970772442
+F1 分数: 0.8859335038363171
+混淆矩阵: TP, FP, TN, FN = 866 92 905 131
+
+
+
+GPT数据集
+df1 = pd.read_csv("../merged_shuffled_gpt_fused_with_id_detect_result_process.csv")
+df2 = pd.read_csv("../../../../gpt_dataset_output/2000legitandphish/merged_shuffled_gpt_fused_with_id.csv")
+对齐后的总数量： 1995
+一致数量 correct： 967
+准确率 Accuracy: 0.48471177944862154
+召回率 Recall: 0.06412825651302605
+精确率 Precision: 0.4050632911392405
+F1 分数: 0.1107266435986159
+混淆矩阵: TP, FP, TN, FN = 64 94 903 934
+
+df1 = pd.read_csv("../merged_shuffled_gpt_fused_m_with_id_detect_result_process.csv")
+df2 = pd.read_csv("../../../../gpt_dataset_output/2000legitandphish/merged_shuffled_gpt_fused_m_with_id.csv")
+对齐后的总数量： 1995
+一致数量 correct： 1281
+准确率 Accuracy: 0.6421052631578947
+召回率 Recall: 0.3717434869739479
+精确率 Precision: 0.8100436681222707
+F1 分数: 0.5096153846153847
+混淆矩阵: TP, FP, TN, FN = 371 87 910 627
+
+df1 = pd.read_csv("../merged_shuffled_gpt_fused_l_with_id_detect_result_process.csv")
+df2 = pd.read_csv("../../../../gpt_dataset_output/2000legitandphish/merged_shuffled_gpt_fused_l_with_id.csv")
+
+对齐后的总数量： 1994
+一致数量 correct： 1689
+准确率 Accuracy: 0.8470411233701103
+召回率 Recall: 0.7743229689067201
+精确率 Precision: 0.9061032863849765
+F1 分数: 0.8350459707950244
+混淆矩阵: TP, FP, TN, FN = 772 80 917 225
+
+together llama数据集
+df1 = pd.read_csv("../merged_shuffled_together_llama_fused_phishing_output_detect_result_process.csv")
+df2 = pd.read_csv("../../../../together_llama_dataset_output/2000legitandphish/merged_shuffled_together_llama_fused_phishing_output_with_id.csv")
+
+对齐后的总数量： 1995
+一致数量： 958
+准确率： 0.48020050125313285
+
+df1 = pd.read_csv("../merged_shuffled_together_llama_fused_phishing_output_m_detect_result_process.csv")
+df2 = pd.read_csv("../../../../together_llama_dataset_output/2000legitandphish/merged_shuffled_together_llama_fused_phishing_output_m_with_id.csv")
+
+对齐后的总数量： 1985
+一致数量： 1233
+准确率： 0.6211586901763224
+
+df1 = pd.read_csv("../merged_shuffled_together_llama_fused_phishing_output_l_cleaned_detect_result_process.csv")
+df2 = pd.read_csv("../../../../together_llama_dataset_output/2000legitandphish/merged_shuffled_together_llama_fused_phishing_output_l_cleaned_with_id.csv")
+
+对齐后的总数量： 1874
+一致数量： 1603
+准确率： 0.8553895410885806
+
+
+local_llama 数据集
+
+df1 = pd.read_csv("../merged_shuffled_local_llama_fused_phishing_output_l_new2_detect_result_process.csv")
+df2 = pd.read_csv("../../../../local_llama_dataset_output/llama3/2000legitandphish/merged_shuffeld_local_llama_fused_phishing_output_l_new2_cleaned_with_id.csv")
+
+对齐后的总数量： 1978
+一致数量 correct： 1562
+准确率 Accuracy: 0.7896865520728008
+召回率 Recall: 0.6666666666666666
+精确率 Precision: 0.8802153432032301
+F1 分数: 0.7587006960556845
+混淆矩阵: TP, FP, TN, FN = 654 89 908 327
+
+df1 = pd.read_csv("../merged_shuffled_local_llama_fused_phishing_output_m_detect_result_process.csv")
+df2 = pd.read_csv("../../../../local_llama_dataset_output/llama3/2000legitandphish/merged_shuffeld_local_llama_fused_phishing_output_m_cleaned_with_id.csv")
+
+对齐后的总数量： 1993
+一致数量 correct： 1193
+准确率 Accuracy: 0.5985950827897641
+召回率 Recall: 0.27309236947791166
+精确率 Precision: 0.7816091954022989
+F1 分数: 0.40476190476190477
+混淆矩阵: TP, FP, TN, FN = 272 76 921 724
+
+
+df1 = pd.read_csv("../merged_shuffled_local_llama_fused_phishing_output_detect_result_process.csv")
+df2 = pd.read_csv("../../../../local_llama_dataset_output/llama3/2000legitandphish/merged_shuffled_local_llama_fused_phishing_output_cleaned_with_id.csv")
+
+对齐后的总数量： 1994
+一致数量 correct： 921
+准确率 Accuracy: 0.4618856569709127
+召回率 Recall: 0.00802407221664995
+精确率 Precision: 0.08695652173913043
+F1 分数: 0.014692378328741965
+混淆矩阵: TP, FP, TN, FN = 8 84 913 989

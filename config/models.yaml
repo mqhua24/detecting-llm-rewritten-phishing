@@ -1,0 +1,95 @@
+ models:
+   qwen3-30b-ali:
+     type: "openai"
+     openai_api_base: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+     model: "qwen3-30b-a3b-instruct-2507"
+     openai_api_key: ""
+
+   llmma-70b-to:
+     type: "openai"
+     openai_api_base: "https://api.together.xyz/v1"
+     model: "meta-llama/Llama-3.3-70B-Instruct-Turbo"
+     openai_api_key: ""
+
+   llmma-70b-bd:
+     type: "baiduOld"
+     openai_api_base: "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/llama_3_70b"
+     model: "Meta-Llama-3-70B-Instruct"
+     openai_api_key: ""
+
+   local-llama3.3-70b:
+     type: "ollama"
+     base_url: "http://localhost:11434"
+     model: "llama3.3:70b-instruct-q2_K"
+
+   local-llama3.2-11b:
+     type: "ollama"
+     base_url: "http://localhost:11434"
+     model: "llama3.2-vision:latest"
+
+   local-llama3-8b:
+     type: "ollama"
+     base_url: "http://localhost:11434"
+     model: "llama3:8b"
+
+   local-qwen3-14b:
+     type: "ollama"
+     base_url: "http://localhost:11434"
+     model: "qwen3:14b"
+
+   local-gpt-oss-20b:
+     type: "ollama"
+     base_url: "http://localhost:11434"
+     model: "gpt-oss:20b"
+
+   local-qwen3-30b:
+     type: "ollama"
+     base_url: "http://localhost:11434"
+     model: "qwen3:30b"
+
+   local-qwen3-8b:
+     type: "ollama"
+     base_url: "http://localhost:11434"
+     model: "qwen3:8b"
+
+   local-qwen3-4b:
+     type: "ollama"
+     base_url: "http://localhost:11434"
+     model: "qwen3:4b"
+
+   local-qwen3-4b-fp16:
+     type: "ollama"
+     base_url: "http://localhost:11434"
+     model: "qwen3:4b-instruct-2507-fp16"
+
+   local-qwen3-4b-q8:
+     type: "ollama"
+     base_url: "http://localhost:11434"
+     model: "qwen3:4b-instruct-2507-q8_0"
+
+   gpt-4:
+     type: "openai"
+     openai_api_base: "https://api.openai.com/v1"
+     model: "gpt-4"
+     openai_api_key: ""
+     proxy: "http://127.0.0.1:1080"  # 添加代理地址
+
+   custom-llm:
+     type: "custom"
+     api_endpoint: "http://your-custom-llm-api.com"
+     model_name: "custom-model-v1"
+
+
+   gpt-5-mini:
+     type: "openai"
+     openai_api_base: "https://api.openai.com/v1"
+     model: "gpt-5-mini"
+     openai_api_key: ""
+     proxy: "http://127.0.0.1:1080"
+
+   gpt-4o-mini:
+     type: "openai"
+     openai_api_base: "https://api.openai.com/v1"
+     model: "gpt-4o-mini"
+     openai_api_key: ""
+     proxy: "http://127.0.0.1:1080"

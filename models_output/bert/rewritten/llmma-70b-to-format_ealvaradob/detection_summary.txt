@@ -1,0 +1,675 @@
+
+==================================================
+Run Time: 2025-11-10 19:51:44
+Input File: phishing_fused_1000_10_S_N_K.csv
+Output File: phishing_fused_1000_10_S_N_K_pred.csv
+==================================================
+Accuracy: 0.8485
+Precision: 1.0000
+Recall: 0.8485
+F1-score: 0.9181
+Confusion Matrix:
+[[  0   0]
+ [151 846]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.85      0.92       997
+
+    accuracy                           0.85       997
+   macro avg       0.50      0.42      0.46       997
+weighted avg       1.00      0.85      0.92       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 19:52:15
+Input File: phishing_fused_1000_11_S_N_R.csv
+Output File: phishing_fused_1000_11_S_N_R_pred.csv
+==================================================
+Accuracy: 0.8455
+Precision: 1.0000
+Recall: 0.8455
+F1-score: 0.9163
+Confusion Matrix:
+[[  0   0]
+ [154 843]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.85      0.92       997
+
+    accuracy                           0.85       997
+   macro avg       0.50      0.42      0.46       997
+weighted avg       1.00      0.85      0.92       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 19:52:46
+Input File: phishing_fused_1000_12_S_N_A.csv
+Output File: phishing_fused_1000_12_S_N_A_pred.csv
+==================================================
+Accuracy: 0.8506
+Precision: 1.0000
+Recall: 0.8506
+F1-score: 0.9192
+Confusion Matrix:
+[[  0   0]
+ [149 848]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.85      0.92       997
+
+    accuracy                           0.85       997
+   macro avg       0.50      0.43      0.46       997
+weighted avg       1.00      0.85      0.92       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 19:53:17
+Input File: phishing_fused_1000_13_S_V_K.csv
+Output File: phishing_fused_1000_13_S_V_K_pred.csv
+==================================================
+Accuracy: 0.8415
+Precision: 1.0000
+Recall: 0.8415
+F1-score: 0.9139
+Confusion Matrix:
+[[  0   0]
+ [158 839]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.84      0.91       997
+
+    accuracy                           0.84       997
+   macro avg       0.50      0.42      0.46       997
+weighted avg       1.00      0.84      0.91       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 19:53:48
+Input File: phishing_fused_1000_14_S_V_R.csv
+Output File: phishing_fused_1000_14_S_V_R_pred.csv
+==================================================
+Accuracy: 0.8355
+Precision: 1.0000
+Recall: 0.8355
+F1-score: 0.9104
+Confusion Matrix:
+[[  0   0]
+ [164 833]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.84      0.91       997
+
+    accuracy                           0.84       997
+   macro avg       0.50      0.42      0.46       997
+weighted avg       1.00      0.84      0.91       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 19:54:18
+Input File: phishing_fused_1000_15_S_V_A.csv
+Output File: phishing_fused_1000_15_S_V_A_pred.csv
+==================================================
+Accuracy: 0.8485
+Precision: 1.0000
+Recall: 0.8485
+F1-score: 0.9181
+Confusion Matrix:
+[[  0   0]
+ [151 846]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.85      0.92       997
+
+    accuracy                           0.85       997
+   macro avg       0.50      0.42      0.46       997
+weighted avg       1.00      0.85      0.92       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 19:54:49
+Input File: phishing_fused_1000_16_S_O_K.csv
+Output File: phishing_fused_1000_16_S_O_K_pred.csv
+==================================================
+Accuracy: 0.8355
+Precision: 1.0000
+Recall: 0.8355
+F1-score: 0.9104
+Confusion Matrix:
+[[  0   0]
+ [164 833]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.84      0.91       997
+
+    accuracy                           0.84       997
+   macro avg       0.50      0.42      0.46       997
+weighted avg       1.00      0.84      0.91       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 19:55:20
+Input File: phishing_fused_1000_17_S_O_R.csv
+Output File: phishing_fused_1000_17_S_O_R_pred.csv
+==================================================
+Accuracy: 0.8305
+Precision: 1.0000
+Recall: 0.8305
+F1-score: 0.9074
+Confusion Matrix:
+[[  0   0]
+ [169 828]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.83      0.91       997
+
+    accuracy                           0.83       997
+   macro avg       0.50      0.42      0.45       997
+weighted avg       1.00      0.83      0.91       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 19:55:51
+Input File: phishing_fused_1000_18_S_O_A.csv
+Output File: phishing_fused_1000_18_S_O_A_pred.csv
+==================================================
+Accuracy: 0.8455
+Precision: 1.0000
+Recall: 0.8455
+F1-score: 0.9163
+Confusion Matrix:
+[[  0   0]
+ [154 843]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.85      0.92       997
+
+    accuracy                           0.85       997
+   macro avg       0.50      0.42      0.46       997
+weighted avg       1.00      0.85      0.92       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 19:56:22
+Input File: phishing_fused_1000_19_H_N_K.csv
+Output File: phishing_fused_1000_19_H_N_K_pred.csv
+==================================================
+Accuracy: 0.8395
+Precision: 1.0000
+Recall: 0.8395
+F1-score: 0.9128
+Confusion Matrix:
+[[  0   0]
+ [160 837]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.84      0.91       997
+
+    accuracy                           0.84       997
+   macro avg       0.50      0.42      0.46       997
+weighted avg       1.00      0.84      0.91       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 19:56:54
+Input File: phishing_fused_1000_1_E_N_K.csv
+Output File: phishing_fused_1000_1_E_N_K_pred.csv
+==================================================
+Accuracy: 0.8987
+Precision: 1.0000
+Recall: 0.8987
+F1-score: 0.9466
+Confusion Matrix:
+[[  0   0]
+ [101 896]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.90      0.95       997
+
+    accuracy                           0.90       997
+   macro avg       0.50      0.45      0.47       997
+weighted avg       1.00      0.90      0.95       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 19:57:25
+Input File: phishing_fused_1000_20_H_N_R.csv
+Output File: phishing_fused_1000_20_H_N_R_pred.csv
+==================================================
+Accuracy: 0.8345
+Precision: 1.0000
+Recall: 0.8345
+F1-score: 0.9098
+Confusion Matrix:
+[[  0   0]
+ [165 832]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.83      0.91       997
+
+    accuracy                           0.83       997
+   macro avg       0.50      0.42      0.45       997
+weighted avg       1.00      0.83      0.91       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 19:57:56
+Input File: phishing_fused_1000_21_H_N_A.csv
+Output File: phishing_fused_1000_21_H_N_A_pred.csv
+==================================================
+Accuracy: 0.8355
+Precision: 1.0000
+Recall: 0.8355
+F1-score: 0.9104
+Confusion Matrix:
+[[  0   0]
+ [164 833]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.84      0.91       997
+
+    accuracy                           0.84       997
+   macro avg       0.50      0.42      0.46       997
+weighted avg       1.00      0.84      0.91       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 19:58:27
+Input File: phishing_fused_1000_22_H_V_K.csv
+Output File: phishing_fused_1000_22_H_V_K_pred.csv
+==================================================
+Accuracy: 0.8124
+Precision: 1.0000
+Recall: 0.8124
+F1-score: 0.8965
+Confusion Matrix:
+[[  0   0]
+ [187 810]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.81      0.90       997
+
+    accuracy                           0.81       997
+   macro avg       0.50      0.41      0.45       997
+weighted avg       1.00      0.81      0.90       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 19:58:57
+Input File: phishing_fused_1000_23_H_V_R.csv
+Output File: phishing_fused_1000_23_H_V_R_pred.csv
+==================================================
+Accuracy: 0.8074
+Precision: 1.0000
+Recall: 0.8074
+F1-score: 0.8935
+Confusion Matrix:
+[[  0   0]
+ [192 805]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.81      0.89       997
+
+    accuracy                           0.81       997
+   macro avg       0.50      0.40      0.45       997
+weighted avg       1.00      0.81      0.89       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 19:59:28
+Input File: phishing_fused_1000_24_H_V_A.csv
+Output File: phishing_fused_1000_24_H_V_A_pred.csv
+==================================================
+Accuracy: 0.8144
+Precision: 1.0000
+Recall: 0.8144
+F1-score: 0.8977
+Confusion Matrix:
+[[  0   0]
+ [185 812]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.81      0.90       997
+
+    accuracy                           0.81       997
+   macro avg       0.50      0.41      0.45       997
+weighted avg       1.00      0.81      0.90       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 19:59:59
+Input File: phishing_fused_1000_25_H_O_K.csv
+Output File: phishing_fused_1000_25_H_O_K_pred.csv
+==================================================
+Accuracy: 0.8134
+Precision: 1.0000
+Recall: 0.8134
+F1-score: 0.8971
+Confusion Matrix:
+[[  0   0]
+ [186 811]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.81      0.90       997
+
+    accuracy                           0.81       997
+   macro avg       0.50      0.41      0.45       997
+weighted avg       1.00      0.81      0.90       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 20:00:30
+Input File: phishing_fused_1000_26_H_O_R.csv
+Output File: phishing_fused_1000_26_H_O_R_pred.csv
+==================================================
+Accuracy: 0.7924
+Precision: 1.0000
+Recall: 0.7924
+F1-score: 0.8842
+Confusion Matrix:
+[[  0   0]
+ [207 790]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.79      0.88       997
+
+    accuracy                           0.79       997
+   macro avg       0.50      0.40      0.44       997
+weighted avg       1.00      0.79      0.88       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 20:01:01
+Input File: phishing_fused_1000_27_H_O_A.csv
+Output File: phishing_fused_1000_27_H_O_A_pred.csv
+==================================================
+Accuracy: 0.8134
+Precision: 1.0000
+Recall: 0.8134
+F1-score: 0.8971
+Confusion Matrix:
+[[  0   0]
+ [186 811]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.81      0.90       997
+
+    accuracy                           0.81       997
+   macro avg       0.50      0.41      0.45       997
+weighted avg       1.00      0.81      0.90       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 20:01:32
+Input File: phishing_fused_1000_2_E_N_R.csv
+Output File: phishing_fused_1000_2_E_N_R_pred.csv
+==================================================
+Accuracy: 0.8907
+Precision: 1.0000
+Recall: 0.8907
+F1-score: 0.9422
+Confusion Matrix:
+[[  0   0]
+ [109 888]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.89      0.94       997
+
+    accuracy                           0.89       997
+   macro avg       0.50      0.45      0.47       997
+weighted avg       1.00      0.89      0.94       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 20:02:02
+Input File: phishing_fused_1000_3_E_N_A.csv
+Output File: phishing_fused_1000_3_E_N_A_pred.csv
+==================================================
+Accuracy: 0.8967
+Precision: 1.0000
+Recall: 0.8967
+F1-score: 0.9455
+Confusion Matrix:
+[[  0   0]
+ [103 894]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.90      0.95       997
+
+    accuracy                           0.90       997
+   macro avg       0.50      0.45      0.47       997
+weighted avg       1.00      0.90      0.95       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 20:02:33
+Input File: phishing_fused_1000_4_E_V_K.csv
+Output File: phishing_fused_1000_4_E_V_K_pred.csv
+==================================================
+Accuracy: 0.8857
+Precision: 1.0000
+Recall: 0.8857
+F1-score: 0.9394
+Confusion Matrix:
+[[  0   0]
+ [114 883]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.89      0.94       997
+
+    accuracy                           0.89       997
+   macro avg       0.50      0.44      0.47       997
+weighted avg       1.00      0.89      0.94       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 20:03:04
+Input File: phishing_fused_1000_5_E_V_R.csv
+Output File: phishing_fused_1000_5_E_V_R_pred.csv
+==================================================
+Accuracy: 0.8816
+Precision: 1.0000
+Recall: 0.8816
+F1-score: 0.9371
+Confusion Matrix:
+[[  0   0]
+ [118 879]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.88      0.94       997
+
+    accuracy                           0.88       997
+   macro avg       0.50      0.44      0.47       997
+weighted avg       1.00      0.88      0.94       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 20:03:34
+Input File: phishing_fused_1000_6_E_V_A.csv
+Output File: phishing_fused_1000_6_E_V_A_pred.csv
+==================================================
+Accuracy: 0.8957
+Precision: 1.0000
+Recall: 0.8957
+F1-score: 0.9450
+Confusion Matrix:
+[[  0   0]
+ [104 893]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.90      0.94       997
+
+    accuracy                           0.90       997
+   macro avg       0.50      0.45      0.47       997
+weighted avg       1.00      0.90      0.94       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 20:04:05
+Input File: phishing_fused_1000_7_E_O_K.csv
+Output File: phishing_fused_1000_7_E_O_K_pred.csv
+==================================================
+Accuracy: 0.8867
+Precision: 1.0000
+Recall: 0.8867
+F1-score: 0.9399
+Confusion Matrix:
+[[  0   0]
+ [113 884]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.89      0.94       997
+
+    accuracy                           0.89       997
+   macro avg       0.50      0.44      0.47       997
+weighted avg       1.00      0.89      0.94       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 20:04:37
+Input File: phishing_fused_1000_8_E_O_R.csv
+Output File: phishing_fused_1000_8_E_O_R_pred.csv
+==================================================
+Accuracy: 0.8907
+Precision: 1.0000
+Recall: 0.8907
+F1-score: 0.9422
+Confusion Matrix:
+[[  0   0]
+ [109 888]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.89      0.94       997
+
+    accuracy                           0.89       997
+   macro avg       0.50      0.45      0.47       997
+weighted avg       1.00      0.89      0.94       997
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-10 20:05:08
+Input File: phishing_fused_1000_9_E_O_A.csv
+Output File: phishing_fused_1000_9_E_O_A_pred.csv
+==================================================
+Accuracy: 0.8917
+Precision: 1.0000
+Recall: 0.8917
+F1-score: 0.9427
+Confusion Matrix:
+[[  0   0]
+ [108 889]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.89      0.94       997
+
+    accuracy                           0.89       997
+   macro avg       0.50      0.45      0.47       997
+weighted avg       1.00      0.89      0.94       997
+
+==================================================
+

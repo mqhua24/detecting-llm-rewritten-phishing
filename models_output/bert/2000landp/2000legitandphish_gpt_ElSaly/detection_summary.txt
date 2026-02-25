@@ -1,0 +1,100 @@
+
+==================================================
+Run Time: 2025-11-03 17:00:59
+Input File: merged_shuffled_fused_original_2000.csv
+Output File: merged_shuffled_fused_original_2000_pred.csv
+==================================================
+Accuracy: 0.9430
+Precision: 0.9944
+Recall: 0.8910
+F1-score: 0.9399
+Confusion Matrix:
+[[995   5]
+ [109 891]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.90      0.99      0.95      1000
+           1       0.99      0.89      0.94      1000
+
+    accuracy                           0.94      2000
+   macro avg       0.95      0.94      0.94      2000
+weighted avg       0.95      0.94      0.94      2000
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-03 17:02:29
+Input File: merged_shuffled_gpt_fused.csv
+Output File: merged_shuffled_gpt_fused_pred.csv
+==================================================
+Accuracy: 0.5265
+Precision: 0.9206
+Recall: 0.0580
+F1-score: 0.1091
+Confusion Matrix:
+[[995   5]
+ [942  58]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.51      0.99      0.68      1000
+           1       0.92      0.06      0.11      1000
+
+    accuracy                           0.53      2000
+   macro avg       0.72      0.53      0.39      2000
+weighted avg       0.72      0.53      0.39      2000
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-03 17:03:57
+Input File: merged_shuffled_gpt_fused_l.csv
+Output File: merged_shuffled_gpt_fused_l_pred.csv
+==================================================
+Accuracy: 0.9265
+Precision: 0.9942
+Recall: 0.8580
+F1-score: 0.9211
+Confusion Matrix:
+[[995   5]
+ [142 858]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.88      0.99      0.93      1000
+           1       0.99      0.86      0.92      1000
+
+    accuracy                           0.93      2000
+   macro avg       0.93      0.93      0.93      2000
+weighted avg       0.93      0.93      0.93      2000
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-03 17:05:25
+Input File: merged_shuffled_gpt_fused_m.csv
+Output File: merged_shuffled_gpt_fused_m_pred.csv
+==================================================
+Accuracy: 0.7230
+Precision: 0.9890
+Recall: 0.4510
+F1-score: 0.6195
+Confusion Matrix:
+[[995   5]
+ [549 451]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.64      0.99      0.78      1000
+           1       0.99      0.45      0.62      1000
+
+    accuracy                           0.72      2000
+   macro avg       0.82      0.72      0.70      2000
+weighted avg       0.82      0.72      0.70      2000
+
+==================================================
+

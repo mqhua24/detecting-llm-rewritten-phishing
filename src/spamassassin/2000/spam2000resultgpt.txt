@@ -1,0 +1,69 @@
+原始在spam里这里不再重跑
+
+df_label = pd.read_csv("../../../gpt_dataset_output/2000legitandphish/merged_shuffled_gpt_fused_m_with_id.csv")
+df_spam = pd.read_csv("merged_shuffled_gpt_fused_m_2000_spam_results_data_clean.csv")
+
+模型评估结果：
+Accuracy : 0.4930
+Precision: 0.4531
+Recall   : 0.0581
+F1-score : 0.1029
+
+详细报告：
+              precision    recall  f1-score   support
+
+      Normal       0.50      0.93      0.65       995
+        Spam       0.45      0.06      0.10       999
+
+    accuracy                                0.49      1994
+   macro avg       0.47      0.49      0.37      1994
+weighted avg       0.47      0.49      0.37      1994
+
+
+进程已结束，退出代码为 0
+
+
+df_label = pd.read_csv("../../../gpt_dataset_output/2000legitandphish/merged_shuffled_gpt_fused_l_with_id.csv")
+df_spam = pd.read_csv("merged_shuffled_gpt_fused_l_2000_spam_results_data_clean.csv")
+
+模型评估结果：
+Accuracy : 0.5043
+Precision: 0.5359
+Recall   : 0.0821
+F1-score : 0.1424
+
+详细报告：
+              precision    recall  f1-score   support
+
+      Normal       0.50      0.93      0.65       994
+        Spam       0.54      0.08      0.14       999
+
+    accuracy                                0.50      1993
+   macro avg       0.52      0.51      0.40      1993
+weighted avg       0.52      0.50      0.40      1993
+
+
+进程已结束，退出代码为 0
+
+
+df_label = pd.read_csv("../../../gpt_dataset_output/2000legitandphish/merged_shuffled_gpt_fused_with_id.csv")
+df_spam = pd.read_csv("merged_shuffled_gpt_fused_2000_spam_results_data_clean.csv")
+
+模型评估结果：
+Accuracy : 0.4735
+Precision: 0.2636
+Recall   : 0.0290
+F1-score : 0.0523
+
+详细报告：
+              precision    recall  f1-score   support
+
+      Normal       0.49      0.92      0.64       998
+        Spam       0.26      0.03      0.05      1000
+
+    accuracy                               0.47      1998
+   macro avg       0.37      0.47      0.34      1998
+weighted avg       0.37      0.47      0.34      1998
+
+
+进程已结束，退出代码为 0

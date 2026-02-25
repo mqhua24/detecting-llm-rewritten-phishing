@@ -1,0 +1,75 @@
+
+==================================================
+Run Time: 2025-11-22 17:32:32
+Input File: merged_shuffeld_local_llama_fused_phishing_output_l_new2_cleaned.csv
+Output File: merged_shuffeld_local_llama_fused_phishing_output_l_new2_cleaned_pred.csv
+==================================================
+Accuracy: 0.8285
+Precision: 0.9984
+Recall: 0.6551
+F1-score: 0.7912
+Confusion Matrix:
+[[999   1]
+ [339 644]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.75      1.00      0.85      1000
+           1       1.00      0.66      0.79       983
+
+    accuracy                           0.83      1983
+   macro avg       0.87      0.83      0.82      1983
+weighted avg       0.87      0.83      0.82      1983
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-22 17:33:04
+Input File: merged_shuffeld_local_llama_fused_phishing_output_m_cleaned.csv
+Output File: merged_shuffeld_local_llama_fused_phishing_output_m_cleaned_pred.csv
+==================================================
+Accuracy: 0.7114
+Precision: 0.9976
+Recall: 0.4234
+F1-score: 0.5945
+Confusion Matrix:
+[[999   1]
+ [576 423]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.63      1.00      0.78      1000
+           1       1.00      0.42      0.59       999
+
+    accuracy                           0.71      1999
+   macro avg       0.82      0.71      0.69      1999
+weighted avg       0.82      0.71      0.69      1999
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-22 17:33:31
+Input File: merged_shuffled_local_llama_fused_phishing_output_cleaned.csv
+Output File: merged_shuffled_local_llama_fused_phishing_output_cleaned_pred.csv
+==================================================
+Accuracy: 0.5058
+Precision: 0.9231
+Recall: 0.0120
+F1-score: 0.0237
+Confusion Matrix:
+[[999   1]
+ [987  12]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67      1000
+           1       0.92      0.01      0.02       999
+
+    accuracy                           0.51      1999
+   macro avg       0.71      0.51      0.35      1999
+weighted avg       0.71      0.51      0.35      1999
+
+==================================================
+

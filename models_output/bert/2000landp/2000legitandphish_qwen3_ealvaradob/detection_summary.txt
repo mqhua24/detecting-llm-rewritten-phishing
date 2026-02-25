@@ -1,0 +1,100 @@
+
+==================================================
+Run Time: 2025-11-03 15:34:49
+Input File: merged_shuffled_fused_original_2000.csv
+Output File: merged_shuffled_fused_original_2000_pred.csv
+==================================================
+Accuracy: 0.9435
+Precision: 0.9989
+Recall: 0.8880
+F1-score: 0.9402
+Confusion Matrix:
+[[999   1]
+ [112 888]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.90      1.00      0.95      1000
+           1       1.00      0.89      0.94      1000
+
+    accuracy                           0.94      2000
+   macro avg       0.95      0.94      0.94      2000
+weighted avg       0.95      0.94      0.94      2000
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-03 15:35:59
+Input File: merged_shuffled_qwen3_fused_clean.csv
+Output File: merged_shuffled_qwen3_fused_clean_pred.csv
+==================================================
+Accuracy: 0.5040
+Precision: 0.9000
+Recall: 0.0090
+F1-score: 0.0178
+Confusion Matrix:
+[[999   1]
+ [991   9]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67      1000
+           1       0.90      0.01      0.02      1000
+
+    accuracy                           0.50      2000
+   macro avg       0.70      0.50      0.34      2000
+weighted avg       0.70      0.50      0.34      2000
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-03 15:37:09
+Input File: merged_shuffled_qwen3_fused_l_clean.csv
+Output File: merged_shuffled_qwen3_fused_l_clean_pred.csv
+==================================================
+Accuracy: 0.9265
+Precision: 0.9988
+Recall: 0.8540
+F1-score: 0.9208
+Confusion Matrix:
+[[999   1]
+ [146 854]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      1.00      0.93      1000
+           1       1.00      0.85      0.92      1000
+
+    accuracy                           0.93      2000
+   macro avg       0.94      0.93      0.93      2000
+weighted avg       0.94      0.93      0.93      2000
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-03 15:38:22
+Input File: merged_shuffled_qwen3_fused_m_clean.csv
+Output File: merged_shuffled_qwen3_fused_m_clean_pred.csv
+==================================================
+Accuracy: 0.7650
+Precision: 0.9981
+Recall: 0.5310
+F1-score: 0.6932
+Confusion Matrix:
+[[999   1]
+ [469 531]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.68      1.00      0.81      1000
+           1       1.00      0.53      0.69      1000
+
+    accuracy                           0.77      2000
+   macro avg       0.84      0.77      0.75      2000
+weighted avg       0.84      0.77      0.75      2000
+
+==================================================
+

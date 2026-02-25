@@ -1,0 +1,98 @@
+spam2000结果
+
+df_label = pd.read_csv("../../../qwen3_dataset_output/2000legitandphish/merged_shuffled_qwen3_fused_l_clean_with_id.csv")
+df_spam = pd.read_csv("merged_shuffled_qwen3_fused_l_clean_2000_spam_results_data_clean.csv")
+
+D:\PycharmProjects\PythonProject\.venv\Scripts\python.exe D:\PycharmProjects\PythonProject\src\spamassassin\2000\mergeoriginalandspamresult.py 
+
+📊 模型评估结果：
+Accuracy : 0.5015
+Precision: 0.5135
+Recall   : 0.0951
+F1-score : 0.1605
+
+详细报告：
+              precision    recall  f1-score   support
+
+      Normal       0.50      0.91      0.65       995
+        Spam       0.51      0.10      0.16       999
+
+    accuracy                           0.50      1994
+   macro avg       0.51      0.50      0.40      1994
+weighted avg       0.51      0.50      0.40      1994
+
+
+进程已结束，退出代码为 0
+
+
+df_label = pd.read_csv("../../../qwen3_dataset_output/2000legitandphish/merged_shuffled_qwen3_fused_clean_with_id.csv")
+df_spam = pd.read_csv("merged_shuffled_qwen3_fused_clean_2000_spam_results_data_clean.csv")
+D:\PycharmProjects\PythonProject\.venv\Scripts\python.exe D:\PycharmProjects\PythonProject\src\spamassassin\2000\mergeoriginalandspamresult.py 
+
+📊 模型评估结果：
+Accuracy : 0.5030
+Precision: 0.5254
+Recall   : 0.0932
+F1-score : 0.1583
+
+详细报告：
+              precision    recall  f1-score   support
+
+      Normal       0.50      0.92      0.65       992
+        Spam       0.53      0.09      0.16       998
+
+    accuracy                           0.50      1990
+   macro avg       0.51      0.50      0.40      1990
+weighted avg       0.51      0.50      0.40      1990
+
+
+进程已结束，退出代码为 0
+
+
+df_label = pd.read_csv("../../../qwen3_dataset_output/2000legitandphish/merged_shuffled_fused_original_2000_with_id.csv")
+df_spam = pd.read_csv("merged_shuffled_fused_original_2000_spam_results_data_clean.csv")
+D:\PycharmProjects\PythonProject\.venv\Scripts\python.exe D:\PycharmProjects\PythonProject\src\spamassassin\2000\mergeoriginalandspamresult.py 
+
+📊 模型评估结果：
+Accuracy : 0.5050
+Precision: 0.5260
+Recall   : 0.1010
+F1-score : 0.1695
+
+详细报告：
+              precision    recall  f1-score   support
+
+      Normal       0.50      0.91      0.65      1000
+        Spam       0.53      0.10      0.17      1000
+
+    accuracy                           0.51      2000
+   macro avg       0.51      0.51      0.41      2000
+weighted avg       0.51      0.51      0.41      2000
+
+
+进程已结束，退出代码为 0
+
+
+df_label = pd.read_csv("../../../qwen3_dataset_output/2000legitandphish/merged_shuffled_qwen3_fused_m_clean_with_id.csv")
+df_spam = pd.read_csv("merged_shuffled_qwen3_fused_m_clean_2000_spam_results_data_clean.csv")
+
+D:\PycharmProjects\PythonProject\.venv\Scripts\python.exe D:\PycharmProjects\PythonProject\src\spamassassin\2000\mergeoriginalandspamresult.py 
+
+📊 模型评估结果：
+Accuracy : 0.5008
+Precision: 0.5185
+Recall   : 0.0704
+F1-score : 0.1239
+
+详细报告：
+              precision    recall  f1-score   support
+
+      Normal       0.50      0.93      0.65       988
+        Spam       0.52      0.07      0.12       995
+
+    accuracy                           0.50      1983
+   macro avg       0.51      0.50      0.39      1983
+weighted avg       0.51      0.50      0.39      1983
+
+
+进程已结束，退出代码为 0

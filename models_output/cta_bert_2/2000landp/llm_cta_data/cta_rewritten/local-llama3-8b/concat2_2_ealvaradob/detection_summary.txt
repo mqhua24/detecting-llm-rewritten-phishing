@@ -1,0 +1,250 @@
+
+==================================================
+Run Time: 2025-12-02 02:02:11
+Input File: concat_gpt_l_with_id_cta_result.csv
+Output File: concat_gpt_l_with_id_cta_result_pred.csv
+==================================================
+Accuracy: 0.9345
+Precision: 0.9943
+Recall: 0.8740
+F1-score: 0.9303
+Confusion Matrix:
+[[995   5]
+ [126 874]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.89      0.99      0.94      1000
+           1       0.99      0.87      0.93      1000
+
+    accuracy                           0.93      2000
+   macro avg       0.94      0.93      0.93      2000
+weighted avg       0.94      0.93      0.93      2000
+
+==================================================
+
+
+==================================================
+Run Time: 2025-12-02 02:02:39
+Input File: concat_gpt_m_with_id_cta_result.csv
+Output File: concat_gpt_m_with_id_cta_result_pred.csv
+==================================================
+Accuracy: 0.7100
+Precision: 0.9907
+Recall: 0.4240
+F1-score: 0.5938
+Confusion Matrix:
+[[996   4]
+ [576 424]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.63      1.00      0.77      1000
+           1       0.99      0.42      0.59      1000
+
+    accuracy                           0.71      2000
+   macro avg       0.81      0.71      0.68      2000
+weighted avg       0.81      0.71      0.68      2000
+
+==================================================
+
+
+==================================================
+Run Time: 2025-12-02 02:03:13
+Input File: concat_gpt_with_id_cta_result.csv
+Output File: concat_gpt_with_id_cta_result_pred.csv
+==================================================
+Accuracy: 0.5040
+Precision: 0.7857
+Recall: 0.0110
+F1-score: 0.0217
+Confusion Matrix:
+[[997   3]
+ [989  11]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67      1000
+           1       0.79      0.01      0.02      1000
+
+    accuracy                           0.50      2000
+   macro avg       0.64      0.50      0.34      2000
+weighted avg       0.64      0.50      0.34      2000
+
+==================================================
+
+
+==================================================
+Run Time: 2025-12-02 02:03:41
+Input File: concat_local_llama_l_with_id_cta_result.csv
+Output File: concat_local_llama_l_with_id_cta_result_pred.csv
+==================================================
+Accuracy: 0.8134
+Precision: 0.9952
+Recall: 0.6267
+F1-score: 0.7690
+Confusion Matrix:
+[[997   3]
+ [367 616]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.73      1.00      0.84      1000
+           1       1.00      0.63      0.77       983
+
+    accuracy                           0.81      1983
+   macro avg       0.86      0.81      0.81      1983
+weighted avg       0.86      0.81      0.81      1983
+
+==================================================
+
+
+==================================================
+Run Time: 2025-12-02 02:04:08
+Input File: concat_local_llama_m_with_id_cta_result.csv
+Output File: concat_local_llama_m_with_id_cta_result_pred.csv
+==================================================
+Accuracy: 0.7309
+Precision: 0.9894
+Recall: 0.4665
+F1-score: 0.6340
+Confusion Matrix:
+[[995   5]
+ [533 466]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.65      0.99      0.79      1000
+           1       0.99      0.47      0.63       999
+
+    accuracy                           0.73      1999
+   macro avg       0.82      0.73      0.71      1999
+weighted avg       0.82      0.73      0.71      1999
+
+==================================================
+
+
+==================================================
+Run Time: 2025-12-02 02:04:37
+Input File: concat_local_llama_with_id_cta_result.csv
+Output File: concat_local_llama_with_id_cta_result_pred.csv
+==================================================
+Accuracy: 0.5093
+Precision: 0.9091
+Recall: 0.0200
+F1-score: 0.0392
+Confusion Matrix:
+[[998   2]
+ [979  20]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67      1000
+           1       0.91      0.02      0.04       999
+
+    accuracy                           0.51      1999
+   macro avg       0.71      0.51      0.35      1999
+weighted avg       0.71      0.51      0.35      1999
+
+==================================================
+
+
+==================================================
+Run Time: 2025-12-02 02:05:08
+Input File: concat_original_2000_with_id_cta_result.csv
+Output File: concat_original_2000_with_id_cta_result_pred.csv
+==================================================
+Accuracy: 0.9465
+Precision: 0.9945
+Recall: 0.8980
+F1-score: 0.9438
+Confusion Matrix:
+[[995   5]
+ [102 898]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.91      0.99      0.95      1000
+           1       0.99      0.90      0.94      1000
+
+    accuracy                           0.95      2000
+   macro avg       0.95      0.95      0.95      2000
+weighted avg       0.95      0.95      0.95      2000
+
+==================================================
+
+
+==================================================
+Run Time: 2025-12-02 02:05:39
+Input File: concat_qwen3_l_with_id_cta_result.csv
+Output File: concat_qwen3_l_with_id_cta_result_pred.csv
+==================================================
+Accuracy: 0.9065
+Precision: 0.9951
+Recall: 0.8170
+F1-score: 0.8973
+Confusion Matrix:
+[[996   4]
+ [183 817]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      1.00      0.91      1000
+           1       1.00      0.82      0.90      1000
+
+    accuracy                           0.91      2000
+   macro avg       0.92      0.91      0.91      2000
+weighted avg       0.92      0.91      0.91      2000
+
+==================================================
+
+
+==================================================
+Run Time: 2025-12-02 02:06:11
+Input File: concat_qwen3_m_with_id_cta_result.csv
+Output File: concat_qwen3_m_with_id_cta_result_pred.csv
+==================================================
+Accuracy: 0.7550
+Precision: 0.9923
+Recall: 0.5140
+F1-score: 0.6772
+Confusion Matrix:
+[[996   4]
+ [486 514]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.67      1.00      0.80      1000
+           1       0.99      0.51      0.68      1000
+
+    accuracy                           0.76      2000
+   macro avg       0.83      0.76      0.74      2000
+weighted avg       0.83      0.76      0.74      2000
+
+==================================================
+
+
+==================================================
+Run Time: 2025-12-02 02:06:42
+Input File: concat_qwen3_with_id_cta_result.csv
+Output File: concat_qwen3_with_id_cta_result_pred.csv
+==================================================
+Accuracy: 0.5020
+Precision: 0.7000
+Recall: 0.0070
+F1-score: 0.0139
+Confusion Matrix:
+[[997   3]
+ [993   7]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.67      1000
+           1       0.70      0.01      0.01      1000
+
+    accuracy                           0.50      2000
+   macro avg       0.60      0.50      0.34      2000
+weighted avg       0.60      0.50      0.34      2000
+
+==================================================
+

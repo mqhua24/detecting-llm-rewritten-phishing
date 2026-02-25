@@ -1,0 +1,150 @@
+
+==================================================
+Run Time: 2025-11-17 17:54:19
+Input File: merged_shuffled_together_llama_fused_phishing_output.csv
+Output File: merged_shuffled_together_llama_fused_phishing_output_pred.csv
+==================================================
+Accuracy: 0.5675
+Precision: 0.9655
+Recall: 0.1400
+F1-score: 0.2445
+Confusion Matrix:
+[[995   5]
+ [860 140]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.54      0.99      0.70      1000
+           1       0.97      0.14      0.24      1000
+
+    accuracy                           0.57      2000
+   macro avg       0.75      0.57      0.47      2000
+weighted avg       0.75      0.57      0.47      2000
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-17 17:55:18
+Input File: merged_shuffled_together_llama_fused_phishing_output_l_cleaned.csv
+Output File: merged_shuffled_together_llama_fused_phishing_output_l_cleaned_pred.csv
+==================================================
+Accuracy: 0.6988
+Precision: 0.9845
+Recall: 0.3618
+F1-score: 0.5291
+Confusion Matrix:
+[[995   5]
+ [561 318]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.64      0.99      0.78      1000
+           1       0.98      0.36      0.53       879
+
+    accuracy                           0.70      1879
+   macro avg       0.81      0.68      0.65      1879
+weighted avg       0.80      0.70      0.66      1879
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-17 17:56:18
+Input File: merged_shuffled_together_llama_fused_phishing_output_l_cleaned_with_id.csv
+Output File: merged_shuffled_together_llama_fused_phishing_output_l_cleaned_with_id_pred.csv
+==================================================
+Accuracy: 0.6988
+Precision: 0.9845
+Recall: 0.3618
+F1-score: 0.5291
+Confusion Matrix:
+[[995   5]
+ [561 318]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.64      0.99      0.78      1000
+           1       0.98      0.36      0.53       879
+
+    accuracy                           0.70      1879
+   macro avg       0.81      0.68      0.65      1879
+weighted avg       0.80      0.70      0.66      1879
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-17 17:57:25
+Input File: merged_shuffled_together_llama_fused_phishing_output_m.csv
+Output File: merged_shuffled_together_llama_fused_phishing_output_m_pred.csv
+==================================================
+Accuracy: 0.7889
+Precision: 0.9914
+Recall: 0.5808
+F1-score: 0.7325
+Confusion Matrix:
+[[995   5]
+ [415 575]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.71      0.99      0.83      1000
+           1       0.99      0.58      0.73       990
+
+    accuracy                           0.79      1990
+   macro avg       0.85      0.79      0.78      1990
+weighted avg       0.85      0.79      0.78      1990
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-17 17:58:38
+Input File: merged_shuffled_together_llama_fused_phishing_output_m_with_id.csv
+Output File: merged_shuffled_together_llama_fused_phishing_output_m_with_id_pred.csv
+==================================================
+Accuracy: 0.7889
+Precision: 0.9914
+Recall: 0.5808
+F1-score: 0.7325
+Confusion Matrix:
+[[995   5]
+ [415 575]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.71      0.99      0.83      1000
+           1       0.99      0.58      0.73       990
+
+    accuracy                           0.79      1990
+   macro avg       0.85      0.79      0.78      1990
+weighted avg       0.85      0.79      0.78      1990
+
+==================================================
+
+
+==================================================
+Run Time: 2025-11-17 17:59:51
+Input File: merged_shuffled_together_llama_fused_phishing_output_with_id.csv
+Output File: merged_shuffled_together_llama_fused_phishing_output_with_id_pred.csv
+==================================================
+Accuracy: 0.5675
+Precision: 0.9655
+Recall: 0.1400
+F1-score: 0.2445
+Confusion Matrix:
+[[995   5]
+ [860 140]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.54      0.99      0.70      1000
+           1       0.97      0.14      0.24      1000
+
+    accuracy                           0.57      2000
+   macro avg       0.75      0.57      0.47      2000
+weighted avg       0.75      0.57      0.47      2000
+
+==================================================
+
