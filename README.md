@@ -1,6 +1,6 @@
 # detect-llm-rewriten-phishing-emals
 This repository contains the code for our research on detecting phishing emails that have been rewritten using Large Language Models (LLMs).
-These experiments correspond to a manuscript currently under preparation.
+These experiments correspond to a thesis currently under preparation.
 
 ## Overview
 
